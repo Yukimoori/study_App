@@ -1,0 +1,40 @@
+<div class="col-md-offset-1">
+  <h2 class="page_title">問題編集</h2>
+  <%= form_for @workbook, url: adtest_path(@workbook) do |f| %>
+    <div class="row" >
+      <div class="col-md-5" >
+        <div class="input_workbook" >
+          <%= f.label :"問題" %>
+          <%= f.text_area :test, class:'test-size' %>
+        </div>
+        <div class="input_workbook" >
+          <%= f.label :"解答" %>
+          <%= f.text_field :correct_answer, class:'answer-size' %>
+        </div>
+      </div>
+      <div class="col-md-4" >
+        <div class="input_workbook" >
+          <%= f.label :"A" %>
+          <%= f.text_field :select_answer1, class:'answer-size' %>
+        </div>
+        <div class="input_workbook" >
+          <%= f.label :"B" %>
+          <%= f.text_field :select_answer2, class:'answer-size' %>
+        </div>
+        <div class="input_workbook" >
+          <%= f.label :"C" %>
+          <%= f.text_field :select_answer3, class:'answer-size' %>
+        </div>
+        <div class="input_workbook" >
+          <%= f.label :"D" %>
+          <%= f.text_field :select_answer4, class:'answer-size' %>
+        </div>
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col-md-offset-7" >
+        <%= f.submit "更新", class:'btn-admin admin_create' %>
+      </div>
+    </div>
+  <% end %>
+</div>

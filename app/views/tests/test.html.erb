@@ -1,0 +1,18 @@
+<div class="test">
+  <h2>問題<%= @workbook.test_id %></h2>
+  <h4><%= @workbook.test %></h4>
+  <div class="test_select">
+    <div class="col-md-9">
+      <%= form_for @workbook, url: tests_check_path, method:"get" do |f| %>
+        <h4><%= f.label :解答 %></h4>
+          <h4><%= f.radio_button :answer,1 %>A. <%= @workbook.select_answer1 %></h4>
+          <h4><%= f.radio_button :answer,2 %>B. <%= @workbook.select_answer2 %></h4>
+          <h4><%= f.radio_button :answer,3 %>C. <%= @workbook.select_answer3 %></h4>
+          <h4><%= f.radio_button :answer,4 %>D. <%= @workbook.select_answer4 %></h4>
+    </div>
+    <div class="col-md-2">
+      <%= f.submit "次へ" ,class:"next_test btn-rightblue"%>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,168 @@
+.header{
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom:1px solid gray;
+  .header_logo{
+    width: 15%;
+    height: 15%;
+  }
+}
+
+.top_gazo{
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url('aaa.png');
+  background-color:rgba(255,255,255,0.9);
+  background-blend-mode:lighten;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.btn_new{
+  margin-bottom: 20px;
+}
+
+.main{
+  height: 380px;
+  border-bottom:1px solid gray;
+}
+
+.test-label{
+  margin-right: 10px;
+}
+.test-size{
+  width: 350px;
+  height: 100px;
+  vertical-align: middle;
+}
+.answer-size{
+  width: 60px;
+  height: 35px;
+}
+.select-size{
+  width: 250px;
+  height: 35px;
+}
+
+.footer{
+  padding-left: 100px;
+  padding-top: 5px;
+}
+
+.page_top{
+  padding-top: 60px;
+  .login{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.page_title{
+  margin-bottom: 50px;
+}
+
+p{
+  .user_info{
+    color: red;
+    .user_info_sub{
+      font-size: 30px;
+    }
+    font-size: 50px;
+  }
+}
+.user{
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 60px;
+}
+
+.btn-rightblue{
+  width: 120px;
+  height: 60px;
+  border: none;
+  border-radius:10px;
+  background-color: rgba(163,216,246,0.5);
+}
+.btn-admin{
+  width: 60px;
+  height: 40px;
+  border: none;
+  border-radius:10px;
+}
+  .admin_create{
+    background-color: rgba(163,216,246,0.5);/*#CCCCCC;*/
+  }
+  .admin_delete{
+    background-color: #CCCCCC;
+  }
+.input_form{
+  margin-right: 15px;
+}
+.center_contens{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.caption_box{
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 280px;
+  margin-top: 1.8em;;
+ .caption{
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding: 0 1em;
+   margin: 0;
+   background-color: white;
+   transform: translateY(-50%) translateX(2em);
+  }
+  .content{
+    margin-top: 40px;
+    p{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+.test{
+  padding-left: 120px;
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  h4{
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .test_select{
+    h4{
+      padding-left: 30px;
+      margin-bottom: 15px;
+    }
+    .next_test{
+      margin-top:150px;
+    }
+  }
+}
+.user_top{
+  margin-top:150px;
+}
+.table{
+  width: 50%;
+  border:1px #CCCCCC solid;
+  th,td{
+    text-align: center;
+    border:1px #CCCCCC solid;
+  }
+}
+
+.input_workbook{
+  margin-bottom: 20px;
+}

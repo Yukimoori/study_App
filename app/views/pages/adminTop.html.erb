@@ -1,0 +1,33 @@
+<div class="col-md-offset-1">
+  <h2>管理者ページ</h2>
+</div>
+<div class="row text-center">
+  <div class="col-md-offset-1 col-md-3">
+    <div class="caption_box">
+      <h3 class="caption">ユーザー関連</h3>
+      <div class="content">
+        <p><%= button_to '一覧', adusers_index_path,  method: :get, class:'btn-rightblue' %></p>
+        <p><%= button_to '作成', adusers_new_path,    method: :get, class:'btn-rightblue' %></p>
+        <p><%= button_to '削除', adusers_delete_path, method: :get, class:'btn-rightblue' %></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 center_contens">
+    <div class="caption_box">
+      <h3 class="caption">成績確認</h3>
+      <div class="content">
+        <p><%= button_to '参照', userboxes_index_path,  method: :get, class:'btn-rightblue' %></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="caption_box">
+      <h3 class="caption">問題作成</h3>
+      <div class="content">
+        <p><%= button_to '一覧', adtests_index_path,  method: :get, class:'btn-rightblue' %></p>
+        <p><%= button_to '作成', adtests_new_path,    method: :get, class:'btn-rightblue' %></p>
+        <p><%= button_to '削除', adtests_delete_path, method: :get, class:'btn-rightblue' %></p>
+      </div>
+    </div>
+  </div>
+</div>

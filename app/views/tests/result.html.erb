@@ -1,0 +1,18 @@
+<div class="col-md-offset-1">
+  <div class="page_title">
+    <h3><%= current_user.user_id %>さん おつかれさまでした</h3>
+  </div>
+  <div class="col-md-offset-1 col-md-8">
+    <p>今回の獲得ポイントは
+      <span class="user_info"><%= current_user.score %></span>点 です。
+    </p>
+    <p>あなたのトータルスコアは
+      <span class="user_info"><%= current_user.total_score %>
+        <span class="user_info_sub">pt</span>
+      </span> です。
+    </p>
+  </div>
+  <div class="col-md-offset-9">
+    <%= button_to 'ユーザートップ', page_path(current_user), method: :get, class:'user_top btn-rightblue'%>
+  </div>
+</div>

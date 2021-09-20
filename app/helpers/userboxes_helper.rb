@@ -1,0 +1,2 @@
+module UserboxesHelper
+end

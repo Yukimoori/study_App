@@ -1,0 +1,21 @@
+<div class="col-md-offset-1">
+  <div class="page_title">
+    <h3>ようこそ<%=@user.user_id %>さん</h3>
+  </div>
+  <div class="col-md-4">
+    <%= image_tag 'run-unscreen.gif' %>
+  </div>
+  <div class="a col-md-8">
+    <p>あなたのレベルは
+      <span class="user_info"><%=@user.level %></span> です。
+    </p>
+    <p>あなたのトータルスコアは
+      <span class="user_info"><%= @user.total_score %>
+        <span class="user_info_sub">pt</span>
+      </span> です。
+    </p>
+  </div>
+  <div class="col-md-offset-9">
+    <%= button_to '問題へ', tests_test_path, method: :get, class:'btn-rightblue'%>
+  </div>
+</div>

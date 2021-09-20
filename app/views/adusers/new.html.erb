@@ -1,0 +1,8 @@
+<div class="col-md-offset-1">
+  <h2 class="page_title">ユーザー作成</h2>
+  <%= form_for @user, url: adusers_path do |f| %>
+      <%= f.label :"ユーザー名", class:'input_form' %>
+      <%= f.text_field :user_id, class:'input_form' %>
+      <%= f.submit "作成", class:'btn-admin admin_create' %>
+  <% end %>
+</div>

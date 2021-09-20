@@ -1,0 +1,25 @@
+<div class="col-md-offset-1">
+  <h2 class="page_title">成績一覧</h2>
+  <table class="table col-md-offset-2">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>ユーザー名</th>
+        <th>レベル</th>
+        <th>トータルスコア</th>
+        <th>最終ログイン</th>
+      </tr>
+    </thead>
+    <% @users.each do |user| %>
+      <tbody>
+        <tr>
+          <td><%= user.id %></td>
+          <td><%= user.user_id %></td>
+          <td><%= user.level %></td>
+          <td><%= user.total_score %></td>
+          <td><%= user.updated_at.strftime('%Y/%m/%d') %></td>
+        </tr>
+      </tbody>
+    <% end %>
+  </table>
+</div>

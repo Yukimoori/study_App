@@ -1,0 +1,8 @@
+<div class="col-md-offset-1">
+  <h2 class="page_title">ユーザー削除</h2>
+  <%= form_for :delete, url: adusers_delete_path,method:"delete" do |f| %>
+    <%= f.label :"ユーザー名", class:'input_form' %>
+    <%= f.text_field :id, class:'input_form' %>
+    <%= f.submit "削除", class:'btn-admin admin_delete' %>
+  <% end %>
+</div>

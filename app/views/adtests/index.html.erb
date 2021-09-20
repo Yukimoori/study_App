@@ -1,0 +1,34 @@
+<div class="col-md-offset-1">
+  <h2 class="page_title">問題一覧</h2>
+  <%= button_to '新規作成', adtests_new_path, method: :get,class: 'btn_new' %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>問題No.</th>
+        <th>問題</th>
+        <th>解答</th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>編集</th>
+        <th>削除</th>
+      </tr>
+    </thead>
+    <% @workbooks.each do |workbook| %>
+      <tbody>
+        <tr>
+          <td><%= workbook.test_id %></td>
+          <td><%= link_to workbook.test.truncate(20, omission:'...'), edit_adtest_path(id: workbook.id), method: :get %></td>
+          <td><%= workbook.correct_answer %></td>
+          <td><%= workbook.select_answer1 %></td>
+          <td><%= workbook.select_answer2 %></td>
+          <td><%= workbook.select_answer3 %></td>
+          <td><%= workbook.select_answer4 %></td>
+          <td><%= button_to '編集', edit_adtest_path(id: workbook.id), method: :get %></td>
+          <td><%= button_to '削除', adtest_path(id: workbook.id), method: :delete %></td>
+        </tr>
+      </tbody>
+    <% end %>
+  </table>
+</div>
